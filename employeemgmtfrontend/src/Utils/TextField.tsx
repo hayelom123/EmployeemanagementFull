@@ -25,7 +25,7 @@ export const TextField: React.FC<props> = ({
         name={name}
         value={value}
         placeholder={placeHolder}
-        onFocus={(e) => {
+        onFocus={() => {
           if (oldType === "date") {
             setOldType("text");
           }

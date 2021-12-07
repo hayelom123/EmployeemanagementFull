@@ -128,8 +128,8 @@ const Edit: React.FC = () => {
               fontSize: "18px",
             }}
             value={user.gender}
-            onChange={(e) => {
-              setUser({ ...user, gender: e.target.value });
+            onChange={(e: React.FormEvent<HTMLSelectElement>) => {
+              setUser({ ...user, gender: e.currentTarget.value });
             }}
           >
             <option value="male">male</option>

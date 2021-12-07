@@ -133,7 +133,7 @@ export const SignUp: React.FC = () => {
         )}
 
         <Button
-          onClick={(e) => {
+          onClick={() => {
             formValidate();
           }}
         >

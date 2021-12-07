@@ -62,7 +62,7 @@ const Home: React.FC = () => {
                 <td>
                   <button
                     className="button button2"
-                    onClick={(e) => {
+                    onClick={() => {
                       navigate("/edit", {
                         state: user,
                       });
@@ -74,7 +74,7 @@ const Home: React.FC = () => {
                 </td>
                 <td>
                   <button
-                    onClick={(e) => {
+                    onClick={() => {
                       onDelete(user._id);
                     }}
                     className="button button3"
