@@ -2,12 +2,14 @@ version: '3.8'
 services:
   frontend:
     build: ./employeemgmtfrontend
+    image: hayelom/employee-management:frontend
     ports:
       - 3000:3000
     environment:
       REACT_APP_HOST: http://localHost:9000/employeemngmt
   backend:
     build: ./employeemgmtBackend
+    image: hayelom/employee-management:backend
     ports:
       - 9000:9000
     environment:
