@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"nodemon index.js"
+    "build":"cd employeemgmtfrontend && npm run build",
+    "install-client":"cd employeemgmtfrontend && npm install",
+    "heroku-postbuild":"npm run install-client && npm run build",
+    "start":"nodemon index.js",
+    "client":"cd employeemgmtfrontend && npm start"
   },
   "repository": {
     "type": "git",
