@@ -58,3 +58,14 @@ export const Table = styled.table`
     border: 2px solid #f44336;
   }
 `;
+export const TableHolder = styled.div`
+  width: 100;
+  min-height: 90vh;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: start;
+  background: rgba(255, 255, 255, 0.2);
+  margin-top: 10px;
+  border-radius: 10px;
+`;

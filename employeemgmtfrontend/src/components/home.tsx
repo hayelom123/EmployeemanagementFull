@@ -5,7 +5,7 @@ import {
   deleteuserActionCreator,
   getListOfEmployees,
 } from "./redux/action/index";
-import { Table } from "../styles/tablestyle";
+import { Table, TableHolder } from "../styles/tablestyle";
 import { useNavigate } from "react-router-dom";
 
 const Home: React.FC = () => {
@@ -20,20 +20,7 @@ const Home: React.FC = () => {
     dispatch(deleteuserActionCreator(_id));
   };
   return (
-    <div
-      style={{
-        width: "100%",
-        // minWidth: "400px",
-        minHeight: "90vh",
-        textAlign: "center",
-        display: "flex",
-        flexFlow: "column",
-        alignItems: "start",
-        background: "rgba(255,255,255,0.2)",
-        marginTop: "10px",
-        borderRadius: "10px",
-      }}
-    >
+    <TableHolder>
       <Table>
         <thead>
           <tr>
@@ -87,7 +74,7 @@ const Home: React.FC = () => {
           })}
         </tbody>
       </Table>
-    </div>
+    </TableHolder>
   );
 };
 export default Home;
