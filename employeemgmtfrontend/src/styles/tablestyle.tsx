@@ -10,7 +10,6 @@ export const TableHolder = styled.div`
   background: rgba(255, 255, 255, 0.2);
   margin-top: 10px;
   border-radius: 10px;
-  overflow-x: scroll;
 `;
 export const Table = styled.table`
   border: 1px solid #ccc;

@@ -39,8 +39,8 @@ const Home: React.FC = () => {
             return (
               <tr>
                 <td data-label="No">{index + 1}</td>
-                <td data-label="Name">{user.Name}</td>
-                <td data-label="Gender">{user.gender}</td>
+                <td data-label="Name">{user.Name.toUpperCase()}</td>
+                <td data-label="Gender">{user.gender.toUpperCase()}</td>
                 <td data-label="Date OF Birth(M/D/Y)">
                   {new Date(
                     user.dateOfBirth ? user.dateOfBirth : "dec 2020-12-02"
