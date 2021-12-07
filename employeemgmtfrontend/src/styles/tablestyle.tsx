@@ -1,5 +1,17 @@
 import styled from "styled-components";
 
+export const TableHolder = styled.div`
+  width: 100%;
+  min-height: 90vh;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: start;
+  background: rgba(255, 255, 255, 0.2);
+  margin-top: 10px;
+  border-radius: 10px;
+  overflow-x: scroll;
+`;
 export const Table = styled.table`
   border: 1px solid #ccc;
   border-collapse: collapse;
@@ -31,6 +43,7 @@ export const Table = styled.table`
   td {
     padding: 0.625em;
     text-align: center;
+    text-transform: capitalize;
   }
 
   th {
