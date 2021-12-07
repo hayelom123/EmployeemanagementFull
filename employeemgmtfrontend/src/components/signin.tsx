@@ -109,7 +109,7 @@ export const SignIn: React.FC = () => {
           </ErrorSpan>
         )}
         <Button
-          onClick={(e) => {
+          onClick={() => {
             formValidate();
             // for(const key in userErrors)
           }}
