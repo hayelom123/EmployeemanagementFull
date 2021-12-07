@@ -21,5 +21,5 @@ app.listen(PORT, () => {
 STEP 1: set port const PORT = process.env.PORT || 9000;
 STEP 2:set mongo db url to process.env.MONGODB_URI||process.env.DB_HOST  //the 2nd is local db
 STEP 3:check process.env.NODE_ENV === 'production'
-
+//       // mongodb+srv://hayelom:hayelom@cluster0.nekxx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 */

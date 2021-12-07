@@ -26,7 +26,7 @@ module.exports = function () {
   // winstone for storing errors in mongodb database
   winston.add(
     new winston.transports.MongoDB({
-      db: process.env.DB_HOST,
+      db: process.env.MONGODB_URI||process.env.DB_HOST,
       options: { useUnifiedTopology: true },
       collection: "systemlog",
     })
