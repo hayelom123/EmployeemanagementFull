@@ -5,13 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"cd employeemgmtfrontend && npm run build",
-    "install-client":"cd employeemgmtfrontend && npm install",
-    "heroku-postbuild":"npm run install-client && npm run build",
-    "start":"nodemon index.js",
-    "client":"cd employeemgmtfrontend && npm start",
+    "build": "cd employeemgmtfrontend && npm run build",
+    "install-client": "cd employeemgmtfrontend && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build",
+    "start": "nodemon index.js",
+    "client": "cd employeemgmtfrontend && npm start",
     "dev": "concurrently -n 'server, client' -c 'red,green' \"nodemon index.js\" \"npm run client\""
-    
   },
   "repository": {
     "type": "git",
