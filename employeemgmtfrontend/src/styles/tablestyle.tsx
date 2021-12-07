@@ -120,6 +120,7 @@ export const Table = styled.table`
       display: block;
       font-size: 1.2em;
       font-weight: 500;
+      text-transform: capitalize;
       text-align: right;
     }
 
